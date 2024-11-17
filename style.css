@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: white;
+    justify-items: center;
+}
+
+
+#digits-container {
+    display: flex;
+    flex-direction: column; 
+    padding-top: 30px;   
+}
+
+.digits {
+    background-color: black;
+    color: rgb(230, 222, 222);
+    text-align: end;
+    font-size: 75px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#calculator-component {
+    background-color: black;
+}
+
+#keypad-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+}
+
+.key {
+    background-color: darkblue;
+    color: white;
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+    border-radius: 25px;
+    border-width: 1px;
+    font-size: 30px;
+}
+
+.mod {
+    background-color: rgb(57, 2, 97);
+}
+
+.total {
+    background-color:darkgoldenrod;
+}
