@@ -3,55 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json"/>
-    <meta name="theme-color" content="#000000"/>
-    <meta name="description" content="PWA mobile app by Robert Alvarez">
-    <title>Web Calc</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/Mediterraneo-icon.png" type="image/png">
+    <title>Mediterraneo</title>
 </head>
 <body>
-    
-    
-    <main id="calculator-component">
 
-        <div id="digits-container">
-            <p class="digits" id="numeral-display">0</p>
-        </div>
-
-        <div id="keypad-container">
-            <div class="key-row">
-                <button class="key mod" onclick="clearNumeral()">C</button>
-                <button class="key mod" onclick="modify('+/-')">+/-</button>
-                <button class="key mod" onclick="modify('%')">%</button>
-                <button class="key mod" onclick="operator('/')">/</button>
-            </div>
-            <div class="key-row">
-                <button class="key" onclick="numeral('7')">7</button>
-                <button class="key" onclick="numeral('8')">8</button>
-                <button class="key" onclick="numeral('9')">9</button>
-                <button class="key mod" onclick="operator('X')">X</button>
-            </div>
-            <div class="key-row">
-                <button class="key" onclick="numeral('4')">4</button>
-                <button class="key" onclick="numeral('5')">5</button>
-                <button class="key" onclick="numeral('6')">6</button>
-                <button class="key mod" onclick="operator('-')">-</button>
-            </div>
-            <div class="key-row">
-                <button class="key" onclick="numeral('1')">1</button>
-                <button class="key" onclick="numeral('2')">2</button>
-                <button class="key" onclick="numeral('3')">3</button>
-                <button class="key mod" onclick="operator('+')">+</button>
-            </div>
-            <div class="key-row">
-                <button class="key" onclick="numeral('00')">00</button>
-                <button class="key" onclick="numeral('0')">0</button>
-                <button class="key" onclick="numeral('.')">.</button>
-                <button class="key total" onclick="equal()">=</button>
+    <header>
+        <div id="light-gray">
+            <div id="light-blue">
+                <img id="page-logo" src="./images/lamp-1.jpg" alt="Page logo image">
+                <ul>
+                    <li><a href="./index.html">Indice</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./dondecomprar.html">&#191;Donde Comprar?</a></li>
+                    <li><a href="./contactanos.html">Contactanos</a></li>
+                </ul>
             </div>
         </div>
+        <div id="banner">
+            <p>DISEÑO MODERNO QUE DA VIDA</p>
+            <p>A TU AMBIENTE Y ESPACIO</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="nuestros-productos">
+            <div class="image-card">
+                <div class="image-column">
+                    <img class="large-merchandise-image" src="./images/sink-5.jpeg">
+                    <img class="large-merchandise-image" src="./images/sink-6.jpeg">                  
+                </div>
+                <div class="image-column">
+                    <img class="small-merchandise-image" src="./images/lamp-2.jpeg">
+                    <img class="small-merchandise-image" src="./images/lamp-3.jpeg">
+                    <img class="small-merchandise-image" src="./images/lamp-4.jpeg">
+                </div>
+            </div>
+            <div class="info-card">
+                <h1>Nuestros Productos</h1>
+                <br/>
+                <h2>Descubre nuestra</h2>
+                <h2>variedad de productos</h2>
+                <h2>Mediterráneo</h2>
+                <div class="parragraph">
+                <p>Todos nuestros productos se caracterizan por su diseño moderno,</p>
+                <p>sencillo y atractivo, que da vida a cada rincón de su hogar.</p>   
+                </div>
+                <br/>
+                <br/>
+                <hr/>
+                <table>
+                    <tr>
+                        <td>Mayor Durabilidad</td>
+                        <td>Estilo Moderno</td>
+                    </tr>
+                    <tr>
+                        <td>Todos nuestros vanities y cocinas</td>
+                        <td>Ahorra energía con nuestra variedad</td>
+                    </tr>
+                    <tr>
+                        <td>son en material PVC.</td>
+                        <td>de lámparas solares.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+        <section id="bano">
+           <div class="info-card">
+                <h1>Baño</h1>
+                <br>
+                <h2>Dale vida a tu baño</h2>
+                <h2>con nuestros</h2>
+                <h2>productos</h2>
+            </div>
+            <div class="image-card">
+                <div class="image-column">
+                    <img class="medium-merchandise-image" src="./images/sink-7.jpeg">
+                    <img class="medium-merchandise-image" src="./images/shower-8.jpeg">                  
+                </div>
+                <div class="image-column">
+                    <img class="medium-merchandise-image" src="./images/shower-9.jpeg">
+                    <img class="medium-merchandise-image" src="./images/counter-10.jpeg">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="decoracion">
+            <div class="info-card">
+                <h1>Decoración</h1>
+                <br/>
+                <h2>Dale vida a tus paredes con</h2>
+                <h2>nuestros productos</h2>
+                <h2>decorativos</h2>
+            </div>
+            <div class="card">
+
+            </div>
+        </section>
+
+
+        <section id="iluminacion">
+            <div class="info-card">
+                <h1>Iluminación</h1>
+                <br>
+                <h2>Dale vida a tus ambientes con nuestra gran variedad de lámparas</h2>
+            </div>
+            <div>
+                <img class="large-merchandise-image" src="./images/counter-11.jpeg">
+                <img class="large-merchandise-image" src="./images/counter-12.jpeg">
+            </div>
+        </section>
+
+
+        <section id="cocina">
+            <br/>
+            <h1>Cocina</h1>
+            <div class="logos">
+                <div class="logos-slide">
+                <img class="large-merchandise-image" src="./images/sink-5.jpeg">
+                <img class="large-merchandise-image" src="./images/sink-6.jpeg">                  
+                <img class="large-merchandise-image" src="./images/lamp-2.jpeg">
+                <img class="large-merchandise-image" src="./images/lamp-3.jpeg">
+                <img class="large-merchandise-image" src="./images/lamp-4.jpeg">
+                <img class="large-merchandise-image" src="./images/sink-5.jpeg">
+                <img class="large-merchandise-image" src="./images/shower-8.jpeg">                  
+                <img class="large-merchandise-image" src="./images/counter-10.jpeg">
+                <img class="large-merchandise-image" src="./images/shower-9.jpeg">
+                <img class="large-merchandise-image" src="./images/counter-12.jpeg">
+                </div>
+                <div class="logos-slide">
+                <img class="large-merchandise-image" src="./images/sink-5.jpeg">
+                <img class="large-merchandise-image" src="./images/sink-6.jpeg">                  
+                <img class="large-merchandise-image" src="./images/lamp-2.jpeg">
+                <img class="large-merchandise-image" src="./images/lamp-3.jpeg">
+                <img class="large-merchandise-image" src="./images/lamp-4.jpeg">
+                <img class="large-merchandise-image" src="./images/sink-5.jpeg">
+                <img class="large-merchandise-image" src="./images/shower-8.jpeg">                  
+                <img class="large-merchandise-image" src="./images/counter-10.jpeg">
+                <img class="large-merchandise-image" src="./images/shower-9.jpeg">
+                <img class="large-merchandise-image" src="./images/counter-12.jpeg">
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <div class="info-card">
+            <h1>Diseño moderno que</h1>
+            <h1>vida a tu hogar</h1>
+            <a id="mailto-link" href="mailto:info@mediterraneopr.net">Escríbenos: info@mediterraneopr.net</a>
+        </div>
+        <div id="footer-table">
+            <table>
+                <tr>
+                    <td>Nosotros</td>
+                    <td>Productos</td>
+                </tr>
+                <tr>
+                    <td>&#191;Donde Comprar?</td>
+                    <td>Baños</td>
+                </tr>
+                <tr>
+                    <td>Contáctanos</td>
+                    <td>Cocinas</td>
+                </tr>
+                <tr>
+                    <td>Consigue nuestros productos en:</td>
+                    <td>Decoración</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Iluminación</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+
 </body>
 </html>
