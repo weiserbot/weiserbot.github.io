@@ -1,0 +1,239 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(209, 209, 209);
+}
+
+header {
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(209, 209, 209));
+    height: 22vw;
+}
+
+
+#light-blue {
+    background: linear-gradient(to right, rgb(36, 54, 90), rgb(145, 153, 201));
+    width: 97%;
+    height: 8vw;
+    margin-right: 100px;
+    border-radius: 0px 0px 20px;
+}
+
+
+#light-gray {
+    background: linear-gradient(to left, rgb(88, 88, 88), rgb(255, 255, 255));
+    width: 100%;
+    height: 9vw;
+}
+
+#page-logo {
+    position: absolute;
+    width: 12vw;
+    margin-top: 30px;
+    margin-left: 4vw;
+    border-radius: 5px;
+}
+
+ul {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    gap: 2vw;
+    margin: 0px;
+    padding-top: 3vw;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2vw;
+    
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+#banner {
+    margin: 10px;
+    padding-right: 130px;
+    color: white;
+    font-size: 3vw;
+    text-align: right;
+    list-style: none;
+    animation: fade-in-out 8s;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+h1 {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 3vw;
+    margin: 10px;
+    color: rgb(36, 54, 90);
+}
+
+.parragraph {
+    margin-top: 40px;
+}
+
+#nuestros-productos {
+    background-color: white;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bano {
+    background: linear-gradient(to bottom, rgb(36, 54, 90), rgb(145, 153, 201));
+    color: white;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bano h2 {
+    color: white;
+}
+
+#decoracion {
+    background-color: gray;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#iluminacion {
+    background-color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cocina {
+    background-color: rgb(189, 189, 189);
+    height: 500px;
+    text-align: center;
+}
+
+
+.image-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    background: linear-gradient(to bottom, rgb(36, 54, 90), rgb(145, 153, 201));
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footer-table {
+    font-size: 1vw;
+}
+
+#mailto-link {
+    color: white;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+
+.large-merchandise-image {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(170, 170, 170);
+    margin: 25px;
+    width: 17vw;
+    max-width: 350px;
+}
+
+.medium-merchandise-image {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(170, 170, 170);
+    margin: 25px;
+    width: 16vw;
+    max-width: 300px;
+}
+
+.small-merchandise-image {
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(170, 170, 170);
+    margin: 25px;
+    width: 15vw;
+    max-width: 170px;
+}
+
+
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: slide 40s infinite linear;
+    margin-top: 3em;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#footer-table {
+    font-size: 1.5em;
+}
+
+#footer-table a {
+    color: white;
+    font-size: 1em;
+}
